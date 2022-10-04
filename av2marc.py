@@ -39,7 +39,7 @@ with open(sys.argv[1], 'rU', encoding='latin-1') as csvFile, open('mal_av.dat', 
         record.add_field(
             Field(
                 tag = '264',
-                indicators = ['#','3'],
+                indicators = [' ','3'],
                 subfields = [
                     'f', manufacturer,
                     'c', year
@@ -47,28 +47,28 @@ with open(sys.argv[1], 'rU', encoding='latin-1') as csvFile, open('mal_av.dat', 
         record.add_field(
             Field(
                 tag = '500',
-                indicators = ['#','#'],
+                indicators = [' ',' '],
                 subfields = [
                     'a', 'Accession Number:' + accessionNo
                 ]))
         record.add_field(
             Field(
                 tag = '516',
-                indicators = ['#','#'],
+                indicators = [' ',' '],
                 subfields = [
                     'a', medium
                 ]))
         record.add_field(
             Field(
-                tag = '793',
-                indicators = ["#","#"],
+                tag = '730',
+                indicators = ["0"," "],
                 subfields = [
                     'a', 'Media Archeology Lab (Basement, 1320 Grandview Ave. Boulder CO 80302.)'
                 ]))
         record.add_field(
             Field(
                 tag = '956',
-                indicators = ["#","#"],
+                indicators = [" "," "],
                 subfields = [
                     'a', 'malcu'
                 ]))
