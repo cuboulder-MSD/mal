@@ -36,14 +36,23 @@ with open(sys.argv[1], 'rU', encoding='latin-1') as csvFile, open('mal_hardware.
         #             'a', product + ' ' + model
         #
         #         ]))
-        record.add_field(
-            Field(
-                tag = '264',
-                indicators = [' ',' '],
-                subfields = [
-                    'f', manufacturer,
-                    'c', year
-                ]))
+        if len(manufacturer) > 0:
+            record.add_field(
+                Field(
+                    tag = '264',
+                    indicators = [' ', ' '],
+                    subfields = [
+                        'f', manufacturer,
+                        'c', year
+                    ]))
+        else:
+            record.add_field(
+                Field(
+                    tag='264',
+                    indicators=[' ', ' '],
+                    subfields=[
+                        'c', year
+                    ]))
         record.add_field(
             Field(
                 tag = '500',
