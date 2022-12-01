@@ -4,7 +4,7 @@ This repository contains code for transforming MAL metadata into the MARC21 sche
 
 MAL records can be found at https://github.com/MediaArchaeologyLab/catalogue
 
-python 2 is required
+python 3 is required
 
 ```python [python code] [csv]```
 
