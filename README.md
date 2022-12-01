@@ -2,6 +2,8 @@
 
 This repository contains code for transforming MAL metadata into the MARC21 schema for import into the Library Catalog. You will need .csv files from the MAL to run these. 
 
+MAL records can be found at https://github.com/MediaArchaeologyLab/catalogue
+
 python 2 is required
 
 ```python [python code] [csv]```
