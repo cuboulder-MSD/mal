@@ -63,7 +63,7 @@ with open(sys.argv[1], 'rU', encoding='latin-1') as csvFile, open('mal_print.dat
                 tag = '730',
                 indicators = ["0"," "],
                 subfields = [
-                    'a', 'Media Archeology Lab (Basement, 1320 Grandview Ave. Boulder CO 80302.)'
+                    'a', 'Media Archaeology Lab (Basement, 1320 Grandview Ave. Boulder CO 80302.)'
                 ]))
         record.add_field(
             Field(
